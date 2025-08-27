@@ -1,0 +1,8 @@
+services:
+  foldergen:
+    build: .
+    environment:
+      ROOT_DIR: /data
+    volumes:
+      - ./output:/data
+    command: ["--create"]
